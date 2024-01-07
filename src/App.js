@@ -1,23 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+// import VeryEasy from './components/veryEasy'
+import BasicInfo from './components/medium'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <BasicInfo name='nicole' dob="08/28/2004" number='704-763-3840'></BasicInfo>
     </div>
   );
 }
