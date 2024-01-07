@@ -5,7 +5,7 @@ import BasicInfo from './components/medium2'
 
 import React, { Component } from 'react'
 
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,8 +29,8 @@ export default class App extends Component {
   render() {
     return (
       <div class="personInfoContent">
-        {this.state.person.map((person, index) => (
-          <BasicInfo key={index} person={person}></BasicInfo>
+        {this.state.person.map((person, position) => (
+          <BasicInfo key={position} person={person}></BasicInfo>
         ))}
 
       </div>
@@ -38,3 +38,4 @@ export default class App extends Component {
   }
 }
 
+export default App;
