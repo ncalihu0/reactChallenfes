@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
-
-export default class info extends Component {
+import BasicInfo from './medium2'
+class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
             person: {
-                name: props.name,
-                dob: props.dob,
-                number: props.number
+                name: 'nicole calihua',
+                dob: '08/28/2004',
+                number: '704-763-3840'
             }
         };
     }
     render() {
         return (
             <div>
-                hello, {this.state.person.name}. your dob: {this.state.person.dob}, your number is {this.state.person.number}
+                <BasicInfo person={this.state.person}></BasicInfo>
             </div>
         )
     }
